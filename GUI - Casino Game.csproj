@@ -86,5 +86,23 @@
   <ItemGroup>
     <None Include="Resources\white screen1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vessel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vessel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blurryface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clancy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

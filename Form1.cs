@@ -16,5 +16,18 @@ namespace GUI___Casino_Game
         {
             InitializeComponent();
         }
+
+        int money = 1000;
+        List<string> logos = new List<string> { "trench", "vessel", "blurryface", "sai", "clancy"};
+        Random generator = new Random();
+        int logo = generator.Next(logos.Count);
+
+        private void btnSpin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
     }
 }

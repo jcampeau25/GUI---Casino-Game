@@ -31,18 +31,18 @@
             this.btnSpin = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblMoney = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgLogo1 = new System.Windows.Forms.PictureBox();
             this.imgSpinner1 = new System.Windows.Forms.PictureBox();
             this.imgSpinner3 = new System.Windows.Forms.PictureBox();
             this.imgSpinner2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.imgLogo2 = new System.Windows.Forms.PictureBox();
+            this.imgLogo3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSpin
@@ -79,16 +79,16 @@
             this.lblMoney.TabIndex = 5;
             this.lblMoney.Text = "Money: $1000";
             // 
-            // pictureBox1
+            // imgLogo1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
-            this.pictureBox1.Location = new System.Drawing.Point(196, 82);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 119);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.imgLogo1.BackColor = System.Drawing.Color.White;
+            this.imgLogo1.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
+            this.imgLogo1.Location = new System.Drawing.Point(196, 82);
+            this.imgLogo1.Name = "imgLogo1";
+            this.imgLogo1.Size = new System.Drawing.Size(117, 119);
+            this.imgLogo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgLogo1.TabIndex = 6;
+            this.imgLogo1.TabStop = false;
             // 
             // imgSpinner1
             // 
@@ -120,27 +120,27 @@
             this.imgSpinner2.TabIndex = 1;
             this.imgSpinner2.TabStop = false;
             // 
-            // pictureBox2
+            // imgLogo2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
-            this.pictureBox2.Location = new System.Drawing.Point(342, 82);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 119);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.imgLogo2.BackColor = System.Drawing.Color.White;
+            this.imgLogo2.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
+            this.imgLogo2.Location = new System.Drawing.Point(342, 82);
+            this.imgLogo2.Name = "imgLogo2";
+            this.imgLogo2.Size = new System.Drawing.Size(117, 119);
+            this.imgLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgLogo2.TabIndex = 7;
+            this.imgLogo2.TabStop = false;
             // 
-            // pictureBox3
+            // imgLogo3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
-            this.pictureBox3.Location = new System.Drawing.Point(490, 82);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(117, 119);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.imgLogo3.BackColor = System.Drawing.Color.White;
+            this.imgLogo3.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
+            this.imgLogo3.Location = new System.Drawing.Point(490, 82);
+            this.imgLogo3.Name = "imgLogo3";
+            this.imgLogo3.Size = new System.Drawing.Size(117, 119);
+            this.imgLogo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgLogo3.TabIndex = 8;
+            this.imgLogo3.TabStop = false;
             // 
             // Form1
             // 
@@ -148,9 +148,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgLogo3);
+            this.Controls.Add(this.imgLogo2);
+            this.Controls.Add(this.imgLogo1);
             this.Controls.Add(this.lblMoney);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.imgSpinner1);
@@ -159,12 +159,12 @@
             this.Controls.Add(this.btnSpin);
             this.Name = "Form1";
             this.Text = "TOP Slot Machine";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,9 +178,9 @@
         private System.Windows.Forms.PictureBox imgSpinner1;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblMoney;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox imgLogo1;
+        private System.Windows.Forms.PictureBox imgLogo2;
+        private System.Windows.Forms.PictureBox imgLogo3;
     }
 }
 

@@ -11,14 +11,25 @@ using System.Windows.Forms;
 
 namespace GUI___Casino_Game
 {
-    public partial class Form1 : Form
+    public partial class Slot : Form
     {
         Random generator = new Random();
-        int logo;
+        int spinner1, spinner2, spinner3;
         int money = 1000;
-        List<string> logos = new List<string> { "trench", "vessel", "blurryface", "sai", "clancy" };
+        List<Bitmap> logos = new List<Bitmap> { 
+            Properties.Resources.trench, 
+            Properties.Resources.vessel, 
+            Properties.Resources.blurryface,
+            Properties.Resources.sai,
+            Properties.Resources.clancy 
+        };
 
-        public Form1()
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        public Slot()
         {
             InitializeComponent();
         }
@@ -29,15 +40,26 @@ namespace GUI___Casino_Game
 
         private void btnSpin_Click(object sender, EventArgs e)
         {
-            logo = generator.Next(0, logos.Count - 1);
-            imgLogo1.Image = GUI___Casino_Game.Properties.Resources.blurryface;
-            imgLogo2.Image = GUI___Casino_Game.Properties.Resources.vessel;
-            imgLogo3.Image = GUI___Casino_Game.Properties.Resources.sai;
+            money -= 100;
+
+            spinner1 = generator.Next(0, logos.Count);
+            spinner2 = generator.Next(0, logos.Count);
+            spinner3 = generator.Next(0, logos.Count);
 
 
+            imgLogo1.Image = logos[spinner1];
+            imgLogo2.Image = logos[spinner2];
+            imgLogo3.Image = logos[spinner3];
+
+            if (spinner1 == spinner2 && spinner1 == spinner3)
+                money += 1000;
+            else if (spinner1 == spinner2 || spinner1 == spinner3 || spinner2 == spinner3)
+                money += 250;
+
+            lblMoney.Text = "Money: $" + money.ToString();
         }
 
-
+        
 
     }
 }

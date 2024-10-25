@@ -83,6 +83,16 @@ namespace GUI___Casino_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ned {
+            get {
+                object obj = ResourceManager.GetObject("ned", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sai {
             get {
                 object obj = ResourceManager.GetObject("sai", resourceCulture);

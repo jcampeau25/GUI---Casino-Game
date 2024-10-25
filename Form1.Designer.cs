@@ -1,6 +1,6 @@
 ﻿namespace GUI___Casino_Game
 {
-    partial class Form1
+    partial class Slot
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@
             this.imgSpinner2 = new System.Windows.Forms.PictureBox();
             this.imgLogo2 = new System.Windows.Forms.PictureBox();
             this.imgLogo3 = new System.Windows.Forms.PictureBox();
+            this.btnQuit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner3)).BeginInit();
@@ -62,22 +63,22 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(12, 410);
+            this.lblPrice.Location = new System.Drawing.Point(12, 379);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(168, 31);
+            this.lblPrice.Size = new System.Drawing.Size(183, 31);
             this.lblPrice.TabIndex = 4;
-            this.lblPrice.Text = "$10 Per Spin";
+            this.lblPrice.Text = "$100 Per Spin";
             // 
             // lblMoney
             // 
             this.lblMoney.AutoSize = true;
             this.lblMoney.BackColor = System.Drawing.Color.Transparent;
             this.lblMoney.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoney.Location = new System.Drawing.Point(563, 410);
+            this.lblMoney.Location = new System.Drawing.Point(12, 410);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(188, 31);
+            this.lblMoney.Size = new System.Drawing.Size(203, 31);
             this.lblMoney.TabIndex = 5;
-            this.lblMoney.Text = "Money: $1000";
+            this.lblMoney.Text = "Money: $10000";
             // 
             // imgLogo1
             // 
@@ -142,12 +143,26 @@
             this.imgLogo3.TabIndex = 8;
             this.imgLogo3.TabStop = false;
             // 
-            // Form1
+            // btnQuit
+            // 
+            this.btnQuit.BackColor = System.Drawing.Color.Black;
+            this.btnQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuit.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnQuit.Location = new System.Drawing.Point(690, 410);
+            this.btnQuit.Name = "btnQuit";
+            this.btnQuit.Size = new System.Drawing.Size(89, 28);
+            this.btnQuit.TabIndex = 9;
+            this.btnQuit.Text = "QUIT";
+            this.btnQuit.UseVisualStyleBackColor = false;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+            // 
+            // Slot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.imgLogo3);
             this.Controls.Add(this.imgLogo2);
             this.Controls.Add(this.imgLogo1);
@@ -157,7 +172,7 @@
             this.Controls.Add(this.imgSpinner3);
             this.Controls.Add(this.imgSpinner2);
             this.Controls.Add(this.btnSpin);
-            this.Name = "Form1";
+            this.Name = "Slot";
             this.Text = "TOP Slot Machine";
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).EndInit();
@@ -181,6 +196,7 @@
         private System.Windows.Forms.PictureBox imgLogo1;
         private System.Windows.Forms.PictureBox imgLogo2;
         private System.Windows.Forms.PictureBox imgLogo3;
+        private System.Windows.Forms.Button btnQuit;
     }
 }
 

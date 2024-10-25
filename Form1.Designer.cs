@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnSpin = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblMoney = new System.Windows.Forms.Label();
+            this.btnQuit = new System.Windows.Forms.Button();
+            this.imgLogo3 = new System.Windows.Forms.PictureBox();
+            this.imgLogo2 = new System.Windows.Forms.PictureBox();
             this.imgLogo1 = new System.Windows.Forms.PictureBox();
             this.imgSpinner1 = new System.Windows.Forms.PictureBox();
             this.imgSpinner3 = new System.Windows.Forms.PictureBox();
             this.imgSpinner2 = new System.Windows.Forms.PictureBox();
-            this.imgLogo2 = new System.Windows.Forms.PictureBox();
-            this.imgLogo3 = new System.Windows.Forms.PictureBox();
-            this.btnQuit = new System.Windows.Forms.Button();
+            this.tmrSpin1 = new System.Windows.Forms.Timer(this.components);
+            this.tmrSpin2 = new System.Windows.Forms.Timer(this.components);
+            this.tmrSpin3 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSpin
@@ -79,6 +83,41 @@
             this.lblMoney.Size = new System.Drawing.Size(203, 31);
             this.lblMoney.TabIndex = 5;
             this.lblMoney.Text = "Money: $10000";
+            // 
+            // btnQuit
+            // 
+            this.btnQuit.BackColor = System.Drawing.Color.Black;
+            this.btnQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuit.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnQuit.Location = new System.Drawing.Point(690, 410);
+            this.btnQuit.Name = "btnQuit";
+            this.btnQuit.Size = new System.Drawing.Size(89, 28);
+            this.btnQuit.TabIndex = 9;
+            this.btnQuit.Text = "QUIT";
+            this.btnQuit.UseVisualStyleBackColor = false;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+            // 
+            // imgLogo3
+            // 
+            this.imgLogo3.BackColor = System.Drawing.Color.White;
+            this.imgLogo3.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
+            this.imgLogo3.Location = new System.Drawing.Point(490, 82);
+            this.imgLogo3.Name = "imgLogo3";
+            this.imgLogo3.Size = new System.Drawing.Size(117, 119);
+            this.imgLogo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgLogo3.TabIndex = 8;
+            this.imgLogo3.TabStop = false;
+            // 
+            // imgLogo2
+            // 
+            this.imgLogo2.BackColor = System.Drawing.Color.White;
+            this.imgLogo2.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
+            this.imgLogo2.Location = new System.Drawing.Point(342, 82);
+            this.imgLogo2.Name = "imgLogo2";
+            this.imgLogo2.Size = new System.Drawing.Size(117, 119);
+            this.imgLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgLogo2.TabIndex = 7;
+            this.imgLogo2.TabStop = false;
             // 
             // imgLogo1
             // 
@@ -121,40 +160,17 @@
             this.imgSpinner2.TabIndex = 1;
             this.imgSpinner2.TabStop = false;
             // 
-            // imgLogo2
+            // tmrSpin1
             // 
-            this.imgLogo2.BackColor = System.Drawing.Color.White;
-            this.imgLogo2.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
-            this.imgLogo2.Location = new System.Drawing.Point(342, 82);
-            this.imgLogo2.Name = "imgLogo2";
-            this.imgLogo2.Size = new System.Drawing.Size(117, 119);
-            this.imgLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgLogo2.TabIndex = 7;
-            this.imgLogo2.TabStop = false;
+            this.tmrSpin1.Interval = 1000000;
             // 
-            // imgLogo3
+            // tmrSpin2
             // 
-            this.imgLogo3.BackColor = System.Drawing.Color.White;
-            this.imgLogo3.Image = global::GUI___Casino_Game.Properties.Resources.clancy;
-            this.imgLogo3.Location = new System.Drawing.Point(490, 82);
-            this.imgLogo3.Name = "imgLogo3";
-            this.imgLogo3.Size = new System.Drawing.Size(117, 119);
-            this.imgLogo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgLogo3.TabIndex = 8;
-            this.imgLogo3.TabStop = false;
+            this.tmrSpin2.Interval = 200;
             // 
-            // btnQuit
+            // tmrSpin3
             // 
-            this.btnQuit.BackColor = System.Drawing.Color.Black;
-            this.btnQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnQuit.Location = new System.Drawing.Point(690, 410);
-            this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(89, 28);
-            this.btnQuit.TabIndex = 9;
-            this.btnQuit.Text = "QUIT";
-            this.btnQuit.UseVisualStyleBackColor = false;
-            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+            this.tmrSpin3.Interval = 300;
             // 
             // Slot
             // 
@@ -174,12 +190,12 @@
             this.Controls.Add(this.btnSpin);
             this.Name = "Slot";
             this.Text = "TOP Slot Machine";
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +213,9 @@
         private System.Windows.Forms.PictureBox imgLogo2;
         private System.Windows.Forms.PictureBox imgLogo3;
         private System.Windows.Forms.Button btnQuit;
+        private System.Windows.Forms.Timer tmrSpin1;
+        private System.Windows.Forms.Timer tmrSpin2;
+        private System.Windows.Forms.Timer tmrSpin3;
     }
 }
 

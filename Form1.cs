@@ -41,11 +41,19 @@ namespace GUI___Casino_Game
         private void btnSpin_Click(object sender, EventArgs e)
         {
             money -= 100;
+            lblMoney.Text = "Money: $" + money.ToString();
+
+            imgLogo1.Visible = false;
+            imgLogo2.Visible = false;
+            imgLogo3.Visible = false;
+
+            tmrSpin1.Enabled = true;
+            tmrSpin2.Enabled = false;
+            imgLogo1.Visible = true;
 
             spinner1 = generator.Next(0, logos.Count);
             spinner2 = generator.Next(0, logos.Count);
             spinner3 = generator.Next(0, logos.Count);
-
 
             imgLogo1.Image = logos[spinner1];
             imgLogo2.Image = logos[spinner2];

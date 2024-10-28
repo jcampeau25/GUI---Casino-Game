@@ -13,6 +13,7 @@ namespace GUI___Casino_Game
 {
     public partial class Slot : Form
     {
+
         Random generator = new Random();
         int spinner1, spinner2, spinner3;
         int money = 1000;
@@ -29,6 +30,22 @@ namespace GUI___Casino_Game
             Application.Exit();
         }
 
+        private void btnRules_Click(object sender, EventArgs e)
+        {
+            imgRules.Visible = true;
+            lblRules.Visible = true;
+            txtRules.Visible = true;
+            btnClose.Visible = true;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            imgRules.Visible = false;
+            lblRules.Visible = false;
+            txtRules.Visible = false;
+            btnClose.Visible = false;
+        }
+
         public Slot()
         {
             InitializeComponent();
@@ -43,13 +60,6 @@ namespace GUI___Casino_Game
             money -= 100;
             lblMoney.Text = "Money: $" + money.ToString();
 
-            imgLogo1.Visible = false;
-            imgLogo2.Visible = false;
-            imgLogo3.Visible = false;
-
-            tmrSpin1.Enabled = true;
-            tmrSpin2.Enabled = false;
-            imgLogo1.Visible = true;
 
             spinner1 = generator.Next(0, logos.Count);
             spinner2 = generator.Next(0, logos.Count);
@@ -70,4 +80,4 @@ namespace GUI___Casino_Game
         
 
     }
-}
+} 

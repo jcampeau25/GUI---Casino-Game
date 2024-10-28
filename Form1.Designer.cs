@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnSpin = new System.Windows.Forms.Button();
-            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblRules = new System.Windows.Forms.Label();
             this.lblMoney = new System.Windows.Forms.Label();
             this.btnQuit = new System.Windows.Forms.Button();
             this.imgLogo3 = new System.Windows.Forms.PictureBox();
@@ -42,12 +42,17 @@
             this.tmrSpin1 = new System.Windows.Forms.Timer(this.components);
             this.tmrSpin2 = new System.Windows.Forms.Timer(this.components);
             this.tmrSpin3 = new System.Windows.Forms.Timer(this.components);
+            this.btnRules = new System.Windows.Forms.Button();
+            this.imgRules = new System.Windows.Forms.PictureBox();
+            this.txtRules = new System.Windows.Forms.TextBox();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRules)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSpin
@@ -62,27 +67,28 @@
             this.btnSpin.UseVisualStyleBackColor = false;
             this.btnSpin.Click += new System.EventHandler(this.btnSpin_Click);
             // 
-            // lblPrice
+            // lblRules
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(12, 379);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(183, 31);
-            this.lblPrice.TabIndex = 4;
-            this.lblPrice.Text = "$100 Per Spin";
+            this.lblRules.AutoSize = true;
+            this.lblRules.BackColor = System.Drawing.Color.Black;
+            this.lblRules.Font = new System.Drawing.Font("Rockwell", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRules.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRules.Location = new System.Drawing.Point(349, 9);
+            this.lblRules.Name = "lblRules";
+            this.lblRules.Size = new System.Drawing.Size(110, 36);
+            this.lblRules.TabIndex = 4;
+            this.lblRules.Text = "RULES";
             // 
             // lblMoney
             // 
             this.lblMoney.AutoSize = true;
             this.lblMoney.BackColor = System.Drawing.Color.Transparent;
             this.lblMoney.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoney.Location = new System.Drawing.Point(12, 410);
+            this.lblMoney.Location = new System.Drawing.Point(294, 410);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(203, 31);
+            this.lblMoney.Size = new System.Drawing.Size(188, 31);
             this.lblMoney.TabIndex = 5;
-            this.lblMoney.Text = "Money: $10000";
+            this.lblMoney.Text = "Money: $1000";
             // 
             // btnQuit
             // 
@@ -172,18 +178,71 @@
             // 
             this.tmrSpin3.Interval = 300;
             // 
+            // btnRules
+            // 
+            this.btnRules.BackColor = System.Drawing.Color.Black;
+            this.btnRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRules.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRules.Location = new System.Drawing.Point(18, 409);
+            this.btnRules.Name = "btnRules";
+            this.btnRules.Size = new System.Drawing.Size(88, 29);
+            this.btnRules.TabIndex = 11;
+            this.btnRules.Text = "RULES";
+            this.btnRules.UseVisualStyleBackColor = false;
+            this.btnRules.Click += new System.EventHandler(this.btnRules_Click);
+            // 
+            // imgRules
+            // 
+            this.imgRules.BackColor = System.Drawing.Color.Black;
+            this.imgRules.Location = new System.Drawing.Point(180, -20);
+            this.imgRules.Name = "imgRules";
+            this.imgRules.Size = new System.Drawing.Size(441, 472);
+            this.imgRules.TabIndex = 12;
+            this.imgRules.TabStop = false;
+            // 
+            // txtRules
+            // 
+            this.txtRules.BackColor = System.Drawing.SystemColors.WindowText;
+            this.txtRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRules.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtRules.Location = new System.Drawing.Point(196, 48);
+            this.txtRules.Multiline = true;
+            this.txtRules.Name = "txtRules";
+            this.txtRules.Size = new System.Drawing.Size(411, 376);
+            this.txtRules.TabIndex = 13;
+            this.txtRules.Text = "You Start With $1000\r\n\r\n$100 Per Play\r\n\r\nTwo of the same pays $250\r\n\r\nThree of th" +
+    "e same pays $1000\r\n\r\nYou can quit at any time by pressing the \"QUIT\" button";
+            this.txtRules.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Lime;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnClose.Location = new System.Drawing.Point(355, 381);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(93, 26);
+            this.btnClose.TabIndex = 14;
+            this.btnClose.Text = "OKAY";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Slot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.lblRules);
+            this.Controls.Add(this.txtRules);
+            this.Controls.Add(this.imgRules);
+            this.Controls.Add(this.btnRules);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.imgLogo3);
             this.Controls.Add(this.imgLogo2);
             this.Controls.Add(this.imgLogo1);
             this.Controls.Add(this.lblMoney);
-            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.imgSpinner1);
             this.Controls.Add(this.imgSpinner3);
             this.Controls.Add(this.imgSpinner2);
@@ -196,6 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSpinner2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRules)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,7 +267,7 @@
         private System.Windows.Forms.PictureBox imgSpinner2;
         private System.Windows.Forms.PictureBox imgSpinner3;
         private System.Windows.Forms.PictureBox imgSpinner1;
-        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblRules;
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.PictureBox imgLogo1;
         private System.Windows.Forms.PictureBox imgLogo2;
@@ -216,6 +276,10 @@
         private System.Windows.Forms.Timer tmrSpin1;
         private System.Windows.Forms.Timer tmrSpin2;
         private System.Windows.Forms.Timer tmrSpin3;
+        private System.Windows.Forms.Button btnRules;
+        private System.Windows.Forms.PictureBox imgRules;
+        private System.Windows.Forms.TextBox txtRules;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 
